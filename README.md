@@ -18,15 +18,14 @@ b) Windows
 2.2) Executar em Docker
 
 a) Criar a imagem: 
-> docker build -t pagamentoimg .
+> docker build -t solicitacaoDrone .
 
 b) Rodar aplicação em conteiner: 
-> docker run --name pagamento -p 8080:8080 -d pagamentoimg
+> docker run --name SolicitacaoDrone -p 8080:8080 -d solicitacaoDrone
 
 3) Exemplo de chamada no navegador:
-> http://localhost:8080/pagamento?tipo_pagamento=DINHEIRO&valor_pagamento=500
-> http://localhost:8080/pagamento?tipo_pagamento=CHEQUE&valor_pagamento=500
-> http://localhost:8080/pagamento?tipo_pagamento=DINHEIRO&valor_pagamento=500
+http://localhost:8080/solicitacao?latitudeOrigem=51.65987&longitudeOrigem=51.65987&latitudeDestino=51.65987&longitudeDestino=51.65987
+
     
 ### References
 
