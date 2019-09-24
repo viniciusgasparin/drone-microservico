@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   app-server:
-    image: viniciusgasparin/solicitacao-drone:latest
+    image: viniciusgasparin/solicitacaoDrone:latest
     build:
       context: .
       dockerfile: Dockerfile

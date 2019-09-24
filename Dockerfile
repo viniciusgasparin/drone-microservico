@@ -2,6 +2,6 @@ FROM openjdk:8-jdk-alpine
 MAINTAINER vinicius.gasparin@hotmail.com
 VOLUME /tmp
 EXPOSE 8080
-ARG JAR_FILE=target/solicitacao-drone-1.0.0.jar
+ARG JAR_FILE=target/solicitacaoDrone-1.0.0.jar
 ADD ${JAR_FILE} solicitacaoDrone.jar
 ENTRYPOINT ["java","-Djava.security.edg=file:/dev/./urandom","-jar","/solicitacaoDrone.jar"]
